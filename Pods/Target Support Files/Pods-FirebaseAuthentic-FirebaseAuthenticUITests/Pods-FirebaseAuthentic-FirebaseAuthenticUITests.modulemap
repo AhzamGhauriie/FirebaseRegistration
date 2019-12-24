@@ -1,0 +1,6 @@
+framework module Pods_FirebaseAuthentic_FirebaseAuthenticUITests {
+  umbrella header "Pods-FirebaseAuthentic-FirebaseAuthenticUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
