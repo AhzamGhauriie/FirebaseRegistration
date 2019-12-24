@@ -136,12 +136,12 @@
 				4DEDFA7F23B20BA500EBFA4E /* AppDelegate.swift */,
 				4DEDFA8123B20BA500EBFA4E /* SceneDelegate.swift */,
 				4DEDFA8323B20BA500EBFA4E /* ViewController.swift */,
+				4D96653123B239CA008839D3 /* ToastView.swift */,
 				4DEDFA8523B20BA500EBFA4E /* Main.storyboard */,
 				4DEDFA8823B20BA700EBFA4E /* Assets.xcassets */,
 				4DEDFA8A23B20BA700EBFA4E /* LaunchScreen.storyboard */,
 				4D96652F23B221B9008839D3 /* GoogleService-Info.plist */,
 				4DEDFA8D23B20BA700EBFA4E /* Info.plist */,
-				4D96653123B239CA008839D3 /* ToastView.swift */,
 			);
 			path = FirebaseAuthentic;
 			sourceTree = "<group>";
