@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtMob: UITextField!
     @IBOutlet weak var txtRoll: UITextField!
     @IBOutlet weak var myImage: UIImageView!
-    @IBOutlet weak var myView: UIView!
+
     
     let imagePicker = UIImagePickerController()
     
@@ -25,8 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     myView.translatesAutoresizingMaskIntoConstraints = false
-       view.addSubview(myView)
+
            //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
 
@@ -56,7 +55,7 @@ class ViewController: UIViewController {
     @IBAction func btnSubmit(_ sender: UIButton) {
         if (txttext != nil) && (txtEmail != nil) && (txtMob != nil) && (txtRoll != nil){
             self.dataFIR()
-            saveFireData()
+            self.saveFireData()
             ToastView.shared.short(self.view, txt_msg: "Account Created Successfully")
             removeAll()
         
@@ -65,8 +64,7 @@ class ViewController: UIViewController {
     }
     
     func saveFireData(){
-        self.uploadImage(self.myImage.image!){url in
-            
+        self.uploadImage(self.myImage.image!){ url in
             self.saveImage(name: self.txttext.text!, profileURL: url!){success in
                 if success != nil{
                     print("yo")
@@ -134,7 +132,7 @@ extension ViewController{
     
     func saveImage(name: String, profileURL:URL,completion: @escaping ((_ url:URL?) -> ())){
         
-        let dict = ["Name":txttext.text!,"Email":txtEmail.text!,"Mobile Number":txtMob.text!,"Rollno":txtRoll.text!,"profileURL":profileURL.absoluteString] as! [String:Any]
+        let dict = ["Name":txttext.text!,"Email":txtEmail.text!,"Mobile Number":txtMob.text!,"Rollno":txtRoll.text!,"profileURL":profileURL.absoluteString] as [String:Any]
         
         self.ref.child("chat").childByAutoId().setValue(dict)
     }

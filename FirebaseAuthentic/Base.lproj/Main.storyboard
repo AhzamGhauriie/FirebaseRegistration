@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jqS-e7-oZT">
-    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseAuthentic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLq-HB-0i4">
-                                <rect key="frame" x="64" y="74" width="768" height="285"/>
+                                <rect key="frame" x="20" y="118" width="374" height="710"/>
                                 <subviews>
                                     <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBb-7D-OYa">
                                         <rect key="frame" x="157" y="17" width="24" height="17"/>
@@ -35,7 +35,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Fullname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yzx-of-Qrc">
-                                        <rect key="frame" x="32" y="118" width="728" height="34"/>
+                                        <rect key="frame" x="8" y="118" width="358" height="34"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <viewLayoutGuide key="safeArea" id="W4g-UX-4ht"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,7 +43,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AVY-aQ-iiU">
-                                        <rect key="frame" x="32" y="202" width="728" height="34"/>
+                                        <rect key="frame" x="8" y="202" width="358" height="34"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <viewLayoutGuide key="safeArea" id="40P-ps-HIa"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,7 +51,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Rollnumber" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2W-Vc-H43">
-                                        <rect key="frame" x="32" y="244" width="728" height="34"/>
+                                        <rect key="frame" x="8" y="244" width="358" height="34"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <viewLayoutGuide key="safeArea" id="E09-E0-vqU"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,7 +59,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✶ Get amazing vouchers and discount to avail huge offer." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEC-T1-Hss">
-                                        <rect key="frame" x="32" y="328" width="728" height="33"/>
+                                        <rect key="frame" x="8" y="328" width="358" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="rZU-QF-7dI"/>
                                         </constraints>
@@ -69,14 +69,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVc-jj-MOp">
-                                        <rect key="frame" x="32" y="160" width="728" height="34"/>
+                                        <rect key="frame" x="8" y="160" width="358" height="34"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✶ Register yourself to get an exclusive discount and offer." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPC-OS-VxI">
-                                        <rect key="frame" x="32" y="286" width="728" height="34"/>
+                                        <rect key="frame" x="8" y="286" width="358" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Y8h-sF-eLV"/>
                                         </constraints>
@@ -86,7 +86,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYP-ep-8Z5">
-                                        <rect key="frame" x="32" y="207" width="728" height="38"/>
+                                        <rect key="frame" x="8" y="632" width="358" height="38"/>
                                         <color key="backgroundColor" red="0.1157536134257222" green="0.82015069227022896" blue="0.99022096400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <viewLayoutGuide key="safeArea" id="t8q-tO-fSc"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
@@ -101,7 +101,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in. instead?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duw-d9-G73">
-                                        <rect key="frame" x="32" y="253" width="728" height="24"/>
+                                        <rect key="frame" x="8" y="678" width="358" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="CS8-IM-2K8"/>
                                         </constraints>
@@ -111,7 +111,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyR-d6-YTc">
-                                        <rect key="frame" x="334" y="-23" width="125" height="116"/>
+                                        <rect key="frame" x="125" y="-23" width="125" height="116"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="125" id="8NE-gb-wnx"/>
@@ -173,7 +173,6 @@
                     <navigationItem key="navigationItem" title="Create Account" id="6qg-IQ-fef"/>
                     <connections>
                         <outlet property="myImage" destination="eyR-d6-YTc" id="z4G-ZW-TGu"/>
-                        <outlet property="myView" destination="bLq-HB-0i4" id="wtD-1e-xhl"/>
                         <outlet property="txtEmail" destination="BVc-jj-MOp" id="j1g-bY-o6f"/>
                         <outlet property="txtMob" destination="AVY-aQ-iiU" id="IyL-J8-wXh"/>
                         <outlet property="txtRoll" destination="h2W-Vc-H43" id="4P8-x6-2Md"/>
@@ -190,7 +189,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jqS-e7-oZT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Txc-v1-JZS">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.052116431295871735" green="0.14640656113624573" blue="0.16339254379272461" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
