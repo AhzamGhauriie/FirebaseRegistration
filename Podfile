@@ -8,6 +8,7 @@ target 'FirebaseAuthentic' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
+pod 'Firebase/Storage'
   # Pods for FirebaseAuthentic
 
   target 'FirebaseAuthenticTests' do
