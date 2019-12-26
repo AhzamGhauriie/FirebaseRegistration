@@ -17,7 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtMob: UITextField!
     @IBOutlet weak var txtRoll: UITextField!
     @IBOutlet weak var myImage: UIImageView!
-
+    @IBOutlet weak var myView: UIView!
+    @IBOutlet weak var imgCam: UIButton!
+    @IBOutlet weak var upLoad: UILabel!
+    
     
     let imagePicker = UIImagePickerController()
     
@@ -43,8 +46,8 @@ class ViewController: UIViewController {
         myImage.isUserInteractionEnabled = true
         myImage.addGestureRecognizer(tapGesture)
         myImage.layer.masksToBounds = true
-        myImage.layer.borderColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0).cgColor
-        myImage.layer.borderWidth = 2
+        myImage.layer.borderColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0).cgColor
+        myImage.layer.borderWidth = 0
         
     
     }
@@ -67,6 +70,8 @@ class ViewController: UIViewController {
         self.uploadImage(self.myImage.image!){ url in
             self.saveImage(name: self.txttext.text!, profileURL: url!){success in
                 if success != nil{
+                    self.upLoad.text = ""
+                    self.imgCam = nil
                     print("yo")
                 }
             }
@@ -106,7 +111,8 @@ extension ViewController: UIImagePickerControllerDelegate,UINavigationController
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         myImage.image = image
         self.dismiss(animated: true, completion: nil)
-    }
+        self.upLoad.text = ""
+        self.imgCam.alpha = 0    }
 }
 
 extension ViewController{
